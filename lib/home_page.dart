@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsy/layouts/layout_builder_layout.dart';
 import 'package:responsy/layouts/media_query_layout.dart';
+import 'package:responsy/layouts/scrollable_layout.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -22,6 +23,10 @@ class HomePage extends StatelessWidget {
               LabelWidget(
                 label: 'LayoutBuilder',
                 child: LayoutBuilderLayout(),
+              ),
+              LabelWidget(
+                label: 'Scrollable Layout',
+                child: ScrollableLayout(),
               ),
             ],
           ),
