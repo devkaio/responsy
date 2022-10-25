@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:responsy/layouts/layout_builder_layout.dart';
 import 'package:responsy/layouts/media_query_layout.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,8 +16,12 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: const [
               LabelWidget(
-                label: 'Flow',
+                label: 'MediaQuery',
                 child: MediaQueryLayout(),
+              ),
+              LabelWidget(
+                label: 'LayoutBuilder',
+                child: LayoutBuilderLayout(),
               ),
             ],
           ),
